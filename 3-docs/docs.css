@@ -1,0 +1,90 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* NavBar */
+
+.nav-links a.active {
+    color: #1a365d;
+    font-weight: bold;
+}
+
+.docs-header {
+    text-align: center;
+    padding: 5rem 5% 0.5rem;
+    /* background: linear-gradient(135deg, #ebf4ff, #dbeafe); */
+    padding-top: 9rem;
+}
+
+.docs-header h1 {
+    font-size: 3rem;
+    color: #1a365d;
+}
+
+.docs-header p {
+    margin-top: 1rem;
+    color: #4a5568;
+}
+
+.docs-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 5%;
+}
+
+.doc-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.doc-section h2 {
+    margin-bottom: 1rem;
+    color: #1a365d;
+}
+
+.doc-section p,
+.doc-section li {
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.doc-section ul {
+    padding-left: 1.2rem;
+}
+
+/* Feature Grid */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.feature-card {
+    background: #ebf4ff;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+
+    .docs-header h1 {
+        margin-top: -1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .docs-header h1 {
+        margin-top: -2.5rem;
+    }
+
+}

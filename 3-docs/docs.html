@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <title>SkyAccess</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../znavbar.css">
+    <link rel="stylesheet" href="../zzfooter.css">
+    <link rel="stylesheet" href="docs.css">
+</head>
+
+<body>
+
+    <!-- NavBar  -->
+
+    <nav>
+        <div class="logo">
+            <div class="cloud-icon"><a href="../index.html">☁️</div>
+            <span>SkyAccess</span></a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="../1-features/features.html">Features</a>
+            <a href="../2-security/security.html">Security</a>
+            <a href="docs.html" class="active">Docs</a>
+            <a href="../4-login/login.html">Login</a>
+            <a href="../5-get/get.html" style="text-decoration: none;"><button class="btn btn-primary">Get
+                    Started</button></a>
+        </div>
+    </nav>
+
+
+    <!-- Main -->
+
+    <header class="docs-header">
+        <h1>SkyAccess Documentation</h1>
+        <p>Everything you need to understand the SkyAccess cloud platform</p>
+    </header>
+
+
+    <main class="docs-container">
+
+        <section id="intro" class="doc-section">
+            <h2>1. Introduction</h2>
+            <p>
+                SkyAccess is a cloud-based web platform that provides secure, scalable,
+                and reliable access to user data. It allows users to upload, store,
+                manage, and monitor files using modern cloud technologies powered by
+                Firebase and Cloudinary.
+            </p>
+        </section>
+
+        <section class="doc-section">
+            <h2>2. Problem Statement</h2>
+            <p>
+                Traditional data storage systems often lack security, scalability, and
+                real-time data synchronization. SkyAccess addresses these challenges by
+                offering a cloud-native solution with secure authentication, real-time
+                databases, and serverless architecture.
+            </p>
+        </section>
+
+        <section class="doc-section">
+            <h2>3. Objectives</h2>
+            <ul>
+                <li>Secure user authentication</li>
+                <li>Cloud-based file storage</li>
+                <li>Scalable and cost-effective architecture</li>
+                <li>Real-time data synchronization</li>
+                <li>User-friendly web interface</li>
+            </ul>
+        </section>
+
+        <section id="features" class="doc-section">
+            <h2>4. Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">🔒 Secure Authentication (Firebase Auth)</div>
+                <div class="feature-card">☁️ Cloud Storage (Cloudinary)</div>
+                <div class="feature-card">📊 Real-Time Data Sync (Firestore)</div>
+                <div class="feature-card">⚡ Serverless Backend (Firebase)</div>
+                <div class="feature-card">🛡️ User-Isolated Access Control</div>
+                <div class="feature-card">📈 Scalable Architecture</div>
+            </div>
+        </section>
+
+        <section id="architecture" class="doc-section">
+            <h2>5. System Architecture</h2>
+            <p>
+                SkyAccess follows a serverless, cloud-native architecture where user
+                authentication is handled by Firebase Authentication, file storage is
+                managed through Cloudinary, and file metadata is stored in Firebase
+                Firestore. This approach removes the need for server management while
+                ensuring scalability and reliability.
+            </p>
+        </section>
+
+        <section class="doc-section">
+            <h2>6. Technologies Used</h2>
+
+            <h4>Frontend</h4>
+            <p>HTML, CSS, JavaScript</p>
+
+            <h4>Backend & Cloud Services</h4>
+            <p>Firebase Authentication, Firestore, Cloudinary</p>
+
+            <h4>Deployment</h4>
+            <p>Vercel</p>
+        </section>
+
+        <section id="challenges" class="doc-section">
+            <h2>7. Challenges Faced</h2>
+            <ul>
+                <li>Implementing secure user authentication</li>
+                <li>Managing per-user file access</li>
+                <li>Synchronizing real-time data</li>
+                <li>Handling file uploads efficiently</li>
+                <li>Designing a clean and responsive UI</li>
+            </ul>
+        </section>
+
+        <section class="doc-section">
+            <h2>8. Solutions Implemented</h2>
+            <p>
+                Firebase Authentication simplified secure login and signup workflows,
+                Cloudinary enabled fast and optimized file storage, and Firestore
+                provided real-time data synchronization. A fully serverless approach
+                reduced operational complexity and improved scalability.
+            </p>
+        </section>
+
+        <section class="doc-section">
+            <h2>9. Advantages</h2>
+            <ul>
+                <li>Secure and reliable authentication</li>
+                <li>Scalable cloud storage</li>
+                <li>Serverless architecture</li>
+                <li>Low maintenance overhead</li>
+                <li>Real-world full-stack project</li>
+            </ul>
+        </section>
+
+        <section class="doc-section">
+            <h2>10. Limitations</h2>
+            <ul>
+                <li>Free-tier usage limits</li>
+                <li>Basic analytics features</li>
+                <li>Limited advanced file management options</li>
+            </ul>
+        </section>
+
+        <section id="future" class="doc-section">
+            <h2>11. Future Enhancements</h2>
+            <ul>
+                <li>File sharing between users</li>
+                <li>Advanced analytics dashboard</li>
+                <li>Role-based user permissions</li>
+                <li>AI-based file categorization</li>
+                <li>Mobile application support</li>
+            </ul>
+        </section>
+
+        <section class="doc-section conclusion">
+            <h2>12. Conclusion</h2>
+            <p>
+                SkyAccess demonstrates practical implementation of modern cloud
+                technologies using Firebase and Cloudinary. The project highlights
+                real-world skills in authentication, serverless architecture, and
+                scalable cloud storage, making it suitable for full-stack and
+                frontend developer portfolios.
+            </p>
+        </section>
+
+    </main>
+
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-box brand">
+                <img src="../assets/sky-access-logo.png" alt="SkyAccess Logo" class="logo-img">
+                <h3>SkyAccess</h3>
+                <p>Secure, scalable & simple cloud storage platform.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <span class="underline"></span>
+                <ul>
+                    <li><a href="../footer-pages/5-privacy/privacy.html">Privacy Policy</a></li>
+                    <li><a href="../footer-pages/6-faq/faq.html">FAQ</a></li>
+                    <li><a href="../footer-pages/7-support/support.html">Support</a></li>
+                    <li><a href="../footer-pages/8-terms/terms.html">Terms of Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <span class="underline"></span>
+                <p>Noida, Uttar Pradesh (India)</p>
+                <p>Phone: +91 8958151939</p>
+                <p>Email: shivm.tech8@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 SkyAccess. All rights reserved
+        </div>
+    </footer>
+
+
+</body>
+<script src="../znavbar.js"></script>
+<script src="docs.js"></script>
+
+</html>

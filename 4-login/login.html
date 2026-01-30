@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <title>SkyAccess</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="../loader.css">
+</head>
+
+<body>
+
+  <div id="loader" class="loader hidden">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+  </div>
+
+
+  <div class="container">
+
+    <div class="card">
+      <div class="logo">
+        <div class="cloud-icon"><a href="../index.html">☁️</div>
+        <span>SkyAccess</span></a>
+      </div>
+
+      <div class="input-box">
+        <span>📧</span>
+        <input type="email" id="email" placeholder="Email">
+      </div>
+
+      <div class="input-box">
+        <span>🔒</span>
+        <input type="password" id="password" placeholder="Password">
+      </div>
+
+      <button class="login-btn" id="login-btn">Login</button>
+
+      <p class="signup">
+        Don't have an account? <a href="../5-get/get.html">Sign Up</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 SkyAccess. All rights reserved.
+  </footer>
+
+  <script type="module" src="../js/login.js"></script>
+  <script type="module" src="../js/auth.js"></script>
+
+  <script type="module" src="../js/firebase.js"></script>
+  <script type="module" src="../js/login.js"></script>
+  <script src="../loader.js"></script>
+</body>
+
+</html>

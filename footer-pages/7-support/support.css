@@ -1,0 +1,147 @@
+/* ScrollBar  */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #4c6eb5, #3b5998);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #4299e1, #3182ce);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(#eaf1ff, #ffffff);
+    min-height: 100vh;
+}
+
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #3b5998;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Grid */
+.support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: #f9faff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* Form */
+.input-box {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3b5998;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #3b5998;
+}
+
+/* Help List */
+.help-list {
+    list-style: none;
+}
+
+.help-list li {
+    margin-bottom: 12px;
+}
+
+.help-list a {
+    text-decoration: none;
+    color: #3b5998;
+    font-weight: 500;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*  Tablet Responsive */
+
+@media (max-width: 1024px) {
+    .container {
+      max-width: 750px;
+    }
+  }
+  
+  /* Mobile Responsive*/
+  
+  @media (max-width: 480px) {
+    .container{
+      max-width: 360px;
+    }
+  }

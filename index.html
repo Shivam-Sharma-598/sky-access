@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <title>SkyAccess</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="znavbar.css">
+    <link rel="stylesheet" href="zzfooter.css">
+</head>
+
+<body>
+
+    <!-- NavBar  -->
+
+    <nav>
+        <div class="logo">
+            <div class="cloud-icon"><a href="index.html">☁️</div>
+            <span>SkyAccess</span></a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="1-features/features.html">Features</a>
+            <a href="2-security/security.html">Security</a>
+            <a href="3-docs/docs.html">Docs</a>
+            <a href="4-login/login.html">Login</a>
+            <a href="5-get/get.html" style="text-decoration: none;"> <button class="btn btn-primary"
+                    href="5-get/get.html">Get Started</button> </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section  -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Build, Store, and Secure Your Data in One Cloud Platform</h1>
+            <p class="hero-tagline">Secure Access to Your Cloud Data</p>
+            <p class="hero-tagline">• Simple</p>
+            <p class="hero-tagline">• Reliable</p>
+            <p class="hero-tagline">• Scalable</p>
+            <div class="hero-buttons">
+                <a href="5-get/get.html" class="btn btn-primary">Get Started Free</a>
+                <a href="#work" class="btn btn-secondary">View Demo</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img class="hero-dashboard-image" src="assets/dashboard.png" alt="SkyAccess dashboard preview" />
+        </div>
+    </section>
+
+    <!-- Key Features Section  -->
+
+    <section id="features">
+        <h2 class="section-title">Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon icon-purple">🔒</div>
+                <h3>Secure Authentication</h3>
+                <p>Secure email and password authentication powered by Firebase Authentication, ensuring safe and
+                    reliable user access.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon icon-blue">☁️</div>
+                <h3>Cloud Storage</h3>
+                <p>Files securely stored using Cloudinary with fast uploads, optimized delivery,
+                    aur per-user file isolation.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon icon-red">📊</div>
+                <h3>Real-time Monitoring</h3>
+                <p>User data and file metadata are managed in real time using Firebase Firestore with instant updates
+                    and synchronization.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon icon-cyan">📈</div>
+                <h3>CI/CD Integration</h3>
+                <p>Deployed on Vercel with automated builds and seamless continuous deployment on every code update.</p>
+            </div>
+        </div>
+        <h2 class="section-title"></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon icon-blue">🛡️</div>
+                <h3>High Availability</h3>
+                <p>Built on Firebase and Cloudinary’s globally distributed infrastructure to ensure maximum uptime and
+                    reliability.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon icon-cyan">💾</div>
+                <h3>Scalable Architecture</h3>
+                <p>The platform automatically scales with growing users and storage needs using Firebase and Cloudinary.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon icon-blue">⚡</div>
+                <h3>Serverless Computing</h3>
+                <p>Fully serverless backend powered by Firebase services, delivering fast performance without server
+                    management.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon icon-purple">🔐</div>
+                <h3>Role-Based Access Control</h3>
+                <p>User access is restricted using Firebase UID-based authorization, ensuring users can only access
+                    their own files.</p>
+            </div>
+        </div>
+        <div id="work"></div>
+    </section>
+
+    <!-- Work Section  -->
+
+    <section class="works-section">
+        <h2 class="section-title">How It Works</h2>
+        <div class="works-grid">
+            <div class="work-step">
+                <div class="step-icon">✉️</div>
+                <h3>Sign up securely</h3>
+                <p>Create an account with Firebase Auth for secure authentication.</p>
+            </div>
+            <div class="work-step">
+                <div class="step-icon">📁</div>
+                <h3>Create & manage resources</h3>
+                <p>Easily upload, store, and organize your files in the cloud.</p>
+            </div>
+            <div class="work-step">
+                <div class="step-icon">📈</div>
+                <h3>Monitor & scale effortlessly</h3>
+                <p>Track usage and performance through Cloudinary and Firebase Firestore.</p>
+            </div>
+        </div>
+
+        <section class="display">
+            <div class="display-image">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <span>☁️ SkyAccess</span>
+                        <span>👤</span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="upload-area">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">☁️</div>
+                            <div style="color: #3b82f6; font-weight: 600;">Choose File to Upload</div>
+                        </div>
+                        <div style="font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">📋 Files List</div>
+                        <div class="file-item">
+                            <span>📄 Resume.docx</span>
+                            <span>DOCX</span>
+                            <span>35 KB</span>
+                            <span>⬇️ 🗑️</span>
+                        </div>
+                        <div class="file-item">
+                            <span>📝 Notes.txt</span>
+                            <span>TXT</span>
+                            <span>50 KB</span>
+                            <span>⬇️ 🗑️</span>
+                        </div>
+                        <div class="file-item">
+                            <span>🖼️ Photo.jpg</span>
+                            <span>JPG</span>
+                            <span>500 KB</span>
+                            <span>⬇️ 🗑️</span>
+                        </div>
+                        <div class="file-item">
+                            <span>📄 Report.pdf</span>
+                            <span>PDF</span>
+                            <span>120 KB</span>
+                            <span>⬇️ 🗑️</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Ready to Build Section  -->
+
+    <section class="cta-section">
+        <h2>Ready to build on your own cloud platform ?</h2>
+        <div class="cta-buttons">
+            <a href="5-get/get.html" style="text-decoration: none;"><button class="btn btn-primary">Get
+                    Started</button></a>
+            <a href="4-login/login.html" style="text-decoration: none;"><button
+                    class="btn btn-primary">Login</button></a>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-box brand">
+                <img src="assets/sky-access-logo.png" alt="SkyAccess Logo" class="logo-img">
+                <h3>SkyAccess</h3>
+                <p>Secure, scalable & simple cloud storage platform.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <span class="underline"></span>
+                <ul>
+                    <li><a href="footer-pages/5-privacy/privacy.html">Privacy Policy</a></li>
+                    <li><a href="footer-pages/6-faq/faq.html">FAQ</a></li>
+                    <li><a href="footer-pages/7-support/support.html">Support</a></li>
+                    <li><a href="footer-pages/8-terms/terms.html">Terms of Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <span class="underline"></span>
+                <p>Noida, Uttar Pradesh (India)</p>
+                <p>Phone: +91 8958151939</p>
+                <p>Email: shivm.tech8@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 SkyAccess. All rights reserved
+        </div>
+    </footer>
+
+</body>
+<script src="znavbar.js"></script>
+<script src="script.js"></script>
+
+</html>

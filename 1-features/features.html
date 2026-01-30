@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <title>SkyAccess</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="../znavbar.css">
+    <link rel="stylesheet" href="../zzfooter.css">
+</head>
+
+<body>
+
+    <!-- NavBar  -->
+
+    <nav>
+        <div class="logo">
+            <div class="cloud-icon"><a href="../index.html">☁️</div>
+            <span>SkyAccess</span></a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="features.html" class="active">Features</a>
+            <a href="../2-security/security.html">Security</a>
+            <a href="../3-docs/docs.html">Docs</a>
+            <a href="../4-login/login.html">Login</a>
+            <a href="../5-get/get.html" style="text-decoration: none;"><button class="btn btn-primary">Get
+                    Started</button></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section  -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Powerful , Secure and Scalable Features</h1>
+            <p class="hero-tagline">The ultimate cloud platform for managing , strong and securing your data </p>
+        </div>
+    </section>
+
+    <!-- Auth Section  -->
+
+    <section id="auth">
+        <div class="auth-card">
+            <div class="auth-left">
+                <div class="icon">
+                    🔐
+                </div>
+                <h2>Secure Authentication</h2>
+                <p>
+                    Secure user sign-up and login powered by Firebase Authentication with encrypted email and password
+                    protection.
+                </p>
+            </div>
+            <img src="../1-features/features-assets/1-security.png" alt="" class="box-image">
+        </div>
+
+        <div class="auth-card">
+            <div class="auth-left">
+                <div class="icon">
+                    ☁️
+                </div>
+                <h2>Cloud Storage</h2>
+                <p>
+                    Store and manage files securely using Cloudinary with fast uploads, optimized delivery, and per-user
+                    file isolation.
+                </p>
+            </div>
+            <img src="../1-features/features-assets/2-cloud.png" alt="" class="box-image">
+        </div>
+
+        <div class="auth-card">
+            <div class="auth-left">
+                <div class="icon">
+                    🧱
+                </div>
+                <h2>Infrastructure as Code</h2>
+                <p>
+                    Leverage a fully serverless architecture using Firebase services for scalable, reliable, and
+                    maintenance-free infrastructure.
+                </p>
+            </div>
+            <img src="../1-features/features-assets/6-infra.png" alt="" class="box-image">
+        </div>
+
+        <div class="auth-card">
+            <div class="auth-left">
+                <div class="icon">
+                    👥
+                </div>
+                <h2>Granular Access Control</h2>
+                <p>
+                    Implement fine-grained access control using Firebase UID-based authorization to ensure users access
+                    only their own data.
+                </p>
+            </div>
+            <img src="../1-features/features-assets/4-access.png" alt="" class="box-image">
+        </div>
+
+        <div class="auth-card">
+            <div class="auth-left">
+                <div class="icon">
+                    📊
+                </div>
+                <h2>Real-Time Monitoring</h2>
+                <p>
+                    Monitor user activity and file metadata in real time using Firebase Firestore with instant data
+                    synchronization.
+                </p>
+            </div>
+            <img src="../1-features/features-assets/5-monitor.png" alt="" class="box-image">
+        </div>
+
+        <div class="auth-card">
+            <div class="auth-left">
+                <div class="icon">
+                    🔄
+                </div>
+                <h2>CI/CD Pipelines</h2>
+                <p>
+                    Automatically build and deploy updates using GitHub integration and Vercel’s continuous deployment
+                    workflow.
+                </p>
+            </div>
+            <img src="../1-features/features-assets/3-ci.png" alt="" class="box-image">
+        </div>
+    </section>
+
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-box brand">
+                <img src="../assets/sky-access-logo.png" alt="SkyAccess Logo" class="logo-img">
+                <h3>SkyAccess</h3>
+                <p>Secure, scalable & simple cloud storage platform.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <span class="underline"></span>
+                <ul>
+                    <li><a href="../footer-pages/5-privacy/privacy.html">Privacy Policy</a></li>
+                    <li><a href="../footer-pages/6-faq/faq.html">FAQ</a></li>
+                    <li><a href="../footer-pages/7-support/support.html">Support</a></li>
+                    <li><a href="../footer-pages/8-terms/terms.html">Terms of Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <span class="underline"></span>
+                <p>Noida, Uttar Pradesh (India)</p>
+                <p>Phone: +91 8958151939</p>
+                <p>Email: shivm.tech8@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 SkyAccess. All rights reserved
+        </div>
+    </footer>
+
+    <script src="features.js"></script>
+    <script src="../znavbar.js"></script>
+</body>
+
+</html>

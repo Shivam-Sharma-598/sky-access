@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+    <title>SkyAccess</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../loader.css">
+</head>
+
+<body>
+
+    <div id="loader" class="loader hidden">
+        <div class="spinner"></div>
+        <!-- <p>Loading...</p> -->
+    </div>
+
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <!-- <div class="overlay" id="overlay"></div> -->
+            <a href="../index.html" style="text-decoration: none; color: white;">
+                <div class="logo">
+                    <div class="logo-icon">☁️</div>
+                    <span>SkyAccess</span>
+                </div>
+            </a>
+
+            <nav>
+                <a href="dashboard.html" style="text-decoration: none; color: inherit;">
+                    <div class="nav-item active">
+                        <span>🏠</span>
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+
+                <a href="pages/1-secure.html" style="text-decoration: none; color: inherit;">
+                    <div class="nav-item">
+                        <span>🔒</span>
+                        <span>Secure Access</span>
+                    </div>
+                </a>
+                <a href="pages/2-monitoring.html" style="text-decoration: none; color: inherit;">
+                    <div class="nav-item">
+                        <span>📊</span>
+                        <span>Monitoring</span>
+                    </div>
+                </a>
+                <a href="pages/3-ci.html" style="text-decoration: none; color: inherit;">
+                    <div class="nav-item">
+                        <span>⚙️</span>
+                        <span>CI/CD</span>
+                    </div>
+                </a>
+            </nav>
+
+        </aside>
+
+        <main class="main-content">
+            <div class="content">
+                <!-- <button class="hamburger" id="hamburger">☰</button> -->
+                <div class="page-header">
+                    <h1>🏠 Dashboard</h1>
+                    <p id="userName" style="margin-left: 3.8rem; font-size: 1.2rem;">Welcome, TestUser</p>
+                </div>
+            </div>
+
+            <div class="content" style="margin-top: -5rem;">
+
+                <section class="storage">
+                    <p>
+                        Storage: <span id="used">0</span> MB / <span id="limit">100</span> MB
+                    </p>
+                    <div class="bar">
+                        <div id="progress"></div>
+                    </div>
+                </section>
+
+                <div class="grid">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon upload-icon">🛡️</div>
+                            <h3>Upload File</h3>
+                        </div>
+                        <div class="upload-area">
+                            <section class="upload">
+                                <input type="file" id="fileInput" class="inputi"
+                                    style="margin-left: 55px;  margin-top: 50px;" />
+                                <button id="uploadBtn" class="upload-btn">📤 Upload</button>
+                            </section>
+                        </div>
+                    </div>
+
+                    <a href="pages/1-secure.html" style="text-decoration: none; color: inherit;" class="popup">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-icon secure-icon">🔒</div>
+                                <h3>Secure Access</h3>
+                            </div>
+                            <p>Files stored securely with Cloudinary with per-user isolation.</p>
+                            <div class="card-image-center">
+                                <img src="assets/1-secure.png" alt="" class="card-image">
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="pages/2-monitoring.html" style="text-decoration: none; color: inherit;" class="popup">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-icon monitor-icon">📈</div>
+                                <h3>Monitoring</h3>
+                            </div>
+                            <p>Monitor user activities and file access logs using Firebase Firestore.</p>
+                            <div class="card-image-center">
+                                <img src="assets/2-monitor.png" alt="" class="card-image">
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="pages/3-ci.html" style="text-decoration: none; color: inherit;" class="popup">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-icon cicd-icon">🔄</div>
+                                <h3>CI/CD Pipelines</h3>
+                            </div>
+                            <p>Automated deployments using Terraform and GitHub Actions.</p>
+                            <div class="card-image-center">
+                                <img src="assets/3-cicd.png" alt="" class="card-image">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <section class="files"
+                    style="background-color: #4a5f8f; color: white; padding: 1rem; border-radius: 11px;">
+                    <h3 style="margin-bottom: 1rem;">Your Files</h3>
+                    <div id="fileList"></div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+
+    <script type="module" src="../js/dashboard.js"></script>
+    <script src="../loader.js"></script>
+</body>
+
+</html>

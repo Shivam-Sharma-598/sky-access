@@ -1,0 +1,114 @@
+/* ScrollBar  */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #4c6eb5, #3b5998);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #4299e1, #3182ce);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(#eaf1ff, #ffffff);
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #3b5998;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* FAQ Item */
+.faq-item {
+    border-bottom: 1px solid #eee;
+}
+
+/* Question Button */
+.faq-question {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 18px 0;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    text-align: left;
+}
+
+/* Icon */
+.faq-question span {
+    font-size: 22px;
+    transition: transform 0.25s ease;
+    will-change: transform;
+}
+
+/* Answer (NO padding animation → no stutter) */
+.faq-answer {
+    height: 0;
+    overflow: hidden;
+    color: #555;
+    line-height: 1.6;
+    will-change: height;
+    transition: height 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Inner spacing wrapper */
+.faq-answer p {
+    padding: 0 0 16px 0;
+}
+
+/* Active State */
+.faq-item.active .faq-question span {
+    transform: rotate(45deg);
+}
+/*  Tablet Responsive */
+
+@media (max-width: 1024px) {
+    .container {
+      max-width: 750px;
+    }
+  }
+  
+  /* Mobile Responsive*/
+  
+  @media (max-width: 480px) {
+    .container{
+      max-width: 360px;
+    }
+  }
