@@ -2,7 +2,7 @@
 
 SkyAccess is a secure cloud storage web application that allows users to upload, manage, and access their files safely. The platform is built using **Firebase** for authentication and database management, and **Cloudinary** for high‑performance media storage and delivery.
 
-🔗 **Live Demo:** [https://sky-access.vercel.app/index.html](https://sky-access.vercel.app/index.html)
+🔗 **Live Site:** [https://sky-access.vercel.app/index.html](https://sky-access.vercel.app/index.html)
 
 ---
 
